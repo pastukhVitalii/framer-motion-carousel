@@ -1,8 +1,9 @@
-import {motion} from "framer-motion";
+import {AnimatePresence, motion} from "framer-motion";
 import * as React from "react";
 import "./cardItem.css";
+import {Octagon} from "../Octagon/Octagon";
 
-export const MenuItem = (props: any) => {
+export const CardItem = (props: any) => {
 
   const {item, isSelected, handleClick, isColaps, closeCarousel = Function.prototype} = props;
 
@@ -16,43 +17,43 @@ export const MenuItem = (props: any) => {
         className="card"
         style={{
           margin: '0 40px',
-          pointerEvents: 'auto',
         }}
         animate={{
-          zIndex: isColaps ? 1 : isSelected ? 15 : 1,
-          scaleY: isColaps ? 1 : isSelected ? 1.1 : 1,
+          height: isColaps ? '500px' : isSelected ? "600px" : '500px',
           scaleX: isColaps ? 1 : isSelected ? 1.1 : 1,
+          y: isColaps ? 0 : isSelected ? -50 : 0,
         }}
         transition={{
           easy: 'linear',
           duration: 1.5,
         }}
       >
-        {isSelected &&
-        <motion.button
-          className="red"
-          style={{
-            width: '40px',
-            height: '40px',
-            border: "none",
-            borderRadius: '50%',
-            position: "fixed",
-            zIndex: 20,
-            left: '-50px',
-            top: '-50px',
-          }}
-          initial={{
-            opacity: 0
-          }}
-          animate={{
-            opacity: 1
-          }}
-          transition={{
-            delay: 1
-          }}
-          onClick={closeCarousel}>
-          X
-        </motion.button>}
+
+        {!isColaps && <AnimatePresence>
+          {isSelected &&
+          <div>
+            <motion.button
+              className="close_button"
+              initial={{
+                opacity: 0,
+              }}
+              animate={{
+                opacity: 1,
+              }}
+              exit={{
+                opacity: 0,
+              }}
+              transition={{
+                delay: 1,
+              }}
+              onClick={closeCarousel}>
+              X
+            </motion.button>
+            <Octagon/>
+          </div>
+          }
+        </AnimatePresence>}
+
         <motion.img
           onClick={onClick}
           animate={{
@@ -64,9 +65,11 @@ export const MenuItem = (props: any) => {
             duration: 1.5,
           }}
           src={item}
-          width='350px'
+          style={{
+            width: '350px',
+          }}
         />
       </motion.div>
     </>
-  );
+  )
 }

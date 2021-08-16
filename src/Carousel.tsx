@@ -1,7 +1,7 @@
 import {motion, useMotionValue, useTransform} from "framer-motion";
 import * as React from "react";
 import {useState} from "react";
-import {MenuItem} from "./CardItem/CardItem";
+import {CardItem} from "./CardItem/CardItem";
 import {images} from "./image-data";
 
 export const Carousel = () => {
@@ -57,19 +57,20 @@ export const Carousel = () => {
         <div style={{position: 'absolute', left: '0', top: '0', width: '50%'}}/>
         <div style={{position: 'absolute', right: '0', top: '25%', width: '50%'}}>
           <motion.div
-            transition={{
-              easy: 'linear',
-              duration: 1.5,
-            }}
             style={{
               display: "flex",
               width: "fit-content",
-              justifyContent: "space-between"
+              justifyContent: "space-between",
             }}
-            animate={{x: -activeIndex * cardWidth - halfWidthOfActiveCard - activeIndex * cardMargin * 2 - cardMargin / 2}}
+            animate={{x: -activeIndex * cardWidth - halfWidthOfActiveCard - activeIndex * cardMargin * 2 - cardMargin / 2,}}
+            transition={{
+              easy: 'linear',
+              duration: 1.5,
+              delay: 0.5,
+            }}
           >
             {images.map((item, index) => (
-              <MenuItem
+              <CardItem
                 key={item}
                 item={item}
                 isSelected={activeIndex === index}
@@ -91,7 +92,8 @@ export const Carousel = () => {
           zIndex: 20,
           borderRadius: '50%',
           margin: '0 auto',
-          position: 'absolute', left: 'calc(50% - 40px)',
+          position: 'absolute',
+          left: 'calc(50% - 40px)',
           bottom: '20px',
         }}
         drag="x"

@@ -1,0 +1,16 @@
+.octagon {
+  position: fixed;
+  top: 100px;
+  right: -15px;
+  z-index: 18;
+  cursor: pointer;
+}
+
+.octagon p {
+  color: #ffffff;
+  z-index: 18;
+  position: absolute;
+  top: -15px;
+  text-transform: uppercase;
+  left: -4px;
+}
