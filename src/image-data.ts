@@ -1,6 +1,7 @@
 export type ProductType = {
   brand: string
   price: number
+  isTop?: boolean
   url: string
 }
 
@@ -18,6 +19,7 @@ export const images: Array<ProductType> = [
   {
     brand: "Asics",
     price: 799,
+    isTop: true,
     url: "https://staging.marketplace.mavfarmapp.com/media/catalog/product/3/4/343bfbfc1a10a39a528a3d34367669c2_x0njjjmjekgekk4i.jpg"
   },
   {
@@ -28,6 +30,7 @@ export const images: Array<ProductType> = [
   {
     brand: "Puma",
     price: 799,
+    isTop: true,
     url: "https://dev.marketplace.mavfarmapp.com/media/catalog/product//4/6/4603294711888-image-0_1.png"
   },
   {
@@ -43,6 +46,7 @@ export const images: Array<ProductType> = [
   {
     brand: "Converse",
     price: 799,
+    isTop: true,
     url: "https://staging.marketplace.mavfarmapp.com/media/catalog/product/7/8/7883dc186e15bf29dad696e1e989e914_w6uwxjupnvtenbvc.jpg"
   },
   {
@@ -63,6 +67,7 @@ export const images: Array<ProductType> = [
   {
     brand: "Salomon",
     price: 799,
+    isTop: true,
     url: "https://staging.marketplace.mavfarmapp.com/media/catalog/product/2/3/23550440c4ccab05e4fc1ebd85e742cc_gw3jj4zmvycccn8x.jpg"
   },
   {

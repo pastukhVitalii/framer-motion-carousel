@@ -1,5 +1,4 @@
 import {motion, useMotionValue, useTransform} from "framer-motion";
-import * as React from "react";
 import {useState} from "react";
 import {CardItem} from "./CardItem/CardItem";
 import {images} from "./image-data";

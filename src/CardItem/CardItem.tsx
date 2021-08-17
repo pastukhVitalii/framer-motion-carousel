@@ -1,8 +1,8 @@
 import {AnimatePresence, motion} from "framer-motion";
-import * as React from "react";
 import "./cardItem.css";
 import {Octagon} from "../Octagon/Octagon";
 import {CardContent} from "../CardContent/CardContent";
+import {Top} from "../Top/Top";
 
 export const CardItem = (props: any) => {
 
@@ -55,22 +55,24 @@ export const CardItem = (props: any) => {
           </div>
           }
         </AnimatePresence>}
-
-        <motion.img
-          onClick={onClick}
-          animate={{
-            scaleY: isColaps ? 1 : isSelected ? 1.1 : 1,
-            scaleX: isColaps ? 1 : isSelected ? 1.1 : 1,
-          }}
-          transition={{
-            easy: 'linear',
-            duration: 1.5,
-          }}
-          src={item.url}
-          style={{
-            width: '350px',
-          }}
-        />
+        <div className="card_img">
+          {item.isTop && <Top isSelected={isSelected} isColaps={isColaps}/>}
+          <motion.img
+            onClick={onClick}
+            animate={{
+              scale: isColaps ? 1 : isSelected ? 1.1 : 1,
+            }}
+            transition={{
+              easy: 'linear',
+              duration: 1.5,
+            }}
+            src={item.url}
+            style={{
+              width: '350px',
+              height: '350px',
+            }}
+          />
+        </div>
       </motion.div>
     </>
   )

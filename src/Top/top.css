@@ -1,0 +1,17 @@
+.top {
+  position: absolute;
+  top: 10%;
+  left: -37px;
+  z-index: 18;
+  cursor: pointer;
+}
+
+.top p {
+  color: #ffffff;
+  z-index: 18;
+  position: absolute;
+  top: -10px;
+  text-transform: uppercase;
+  left: -3px;
+  transform: rotate(-30deg);
+}

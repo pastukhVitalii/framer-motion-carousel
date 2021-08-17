@@ -1,5 +1,4 @@
 import {motion} from "framer-motion";
-import * as React from "react";
 import "./octagon.css";
 
 export const Octagon = () => {
@@ -26,7 +25,7 @@ export const Octagon = () => {
           scale: 3
         }}
         animate={{
-          rotate: 180,
+          rotate: 360,
           scale: 3,
         }}
         transition={{

@@ -1,5 +1,5 @@
 import "./price.css";
-import {LegacyRef, RefObject, useEffect, useRef} from "react";
+import {useEffect, useRef} from "react";
 import {animate} from "framer-motion";
 
 export const Price = (props: any) => {

@@ -12,7 +12,7 @@ export const CardContent = (props: any) => {
       }}
       animate={{
         opacity: 1,
-        y: 200
+        y: 225
       }}
       exit={{
         opacity: 0,
