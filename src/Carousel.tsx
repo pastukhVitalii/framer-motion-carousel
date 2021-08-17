@@ -21,7 +21,7 @@ export const Carousel = () => {
             setIsColaps(false);
           }
         } else {
-          activeIndex < 13 && setActive(activeIndex + 1)
+          activeIndex < images.length - 1 && setActive(activeIndex + 1)
           if (isColaps) {
             setIsColaps(false);
           }
@@ -65,13 +65,13 @@ export const Carousel = () => {
             animate={{x: -activeIndex * cardWidth - halfWidthOfActiveCard - activeIndex * cardMargin * 2 - cardMargin / 2,}}
             transition={{
               easy: 'linear',
-              duration: 1.5,
+              duration: 1,
               delay: 0.5,
             }}
           >
             {images.map((item, index) => (
               <CardItem
-                key={item}
+                key={item.brand}
                 item={item}
                 isSelected={activeIndex === index}
                 handleClick={() => activeCarousel(index)}

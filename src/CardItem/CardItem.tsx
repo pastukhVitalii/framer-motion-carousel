@@ -2,6 +2,7 @@ import {AnimatePresence, motion} from "framer-motion";
 import * as React from "react";
 import "./cardItem.css";
 import {Octagon} from "../Octagon/Octagon";
+import {CardContent} from "../CardContent/CardContent";
 
 export const CardItem = (props: any) => {
 
@@ -25,7 +26,7 @@ export const CardItem = (props: any) => {
         }}
         transition={{
           easy: 'linear',
-          duration: 1.5,
+          duration: 1,
         }}
       >
 
@@ -50,6 +51,7 @@ export const CardItem = (props: any) => {
               X
             </motion.button>
             <Octagon/>
+            <CardContent brand={item.brand} price={item.price}/>
           </div>
           }
         </AnimatePresence>}
@@ -64,7 +66,7 @@ export const CardItem = (props: any) => {
             easy: 'linear',
             duration: 1.5,
           }}
-          src={item}
+          src={item.url}
           style={{
             width: '350px',
           }}
