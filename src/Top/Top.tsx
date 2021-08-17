@@ -7,7 +7,7 @@ export const Top = (props: any) => {
     <motion.div
       className="top"
       animate={{
-        y: props.isSelected && !props.isColaps ? -30 : 0
+        y: props.isSelected && !props.isColaps ? -80 : 0
       }}
       transition={{
         duration: 1

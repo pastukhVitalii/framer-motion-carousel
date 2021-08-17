@@ -2,7 +2,6 @@ import {motion} from "framer-motion";
 import "./octagon.css";
 
 export const Octagon = () => {
-
   return (
     <motion.div
       className="octagon"

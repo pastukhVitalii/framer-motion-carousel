@@ -55,9 +55,10 @@ export const CardItem = (props: any) => {
           </div>
           }
         </AnimatePresence>}
-        <div className="card_img">
+        <div className="static_content">
           {item.isTop && <Top isSelected={isSelected} isColaps={isColaps}/>}
           <motion.img
+            className="card_img"
             onClick={onClick}
             animate={{
               scale: isColaps ? 1 : isSelected ? 1.1 : 1,
@@ -67,10 +68,6 @@ export const CardItem = (props: any) => {
               duration: 1.5,
             }}
             src={item.url}
-            style={{
-              width: '350px',
-              height: '350px',
-            }}
           />
         </div>
       </motion.div>

@@ -17,6 +17,12 @@
   cursor: pointer;
 }
 
-.card_img {
+.static_content {
   position: fixed;
+}
+
+.card_img {
+  width: 350px;
+  height: 350px;
+  cursor: pointer;
 }
