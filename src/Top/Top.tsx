@@ -3,15 +3,15 @@ import "./top.css";
 
 type PropsType = {
   isSelected: boolean
-  isColaps: boolean
+  isCollapse: boolean
 }
 
 export const Top = (props: PropsType) => {
-  const {isSelected, isColaps} = props;
+  const {isSelected, isCollapse} = props;
 
   const variantsContainer = {
     animate: {
-      y: isSelected && !isColaps ? -80 : 0,
+      y: isSelected && !isCollapse ? -80 : 0,
       transition: {
         duration: 1
       }

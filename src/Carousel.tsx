@@ -1,32 +1,26 @@
-import {motion, useMotionValue, useTransform} from "framer-motion";
+import {motion, PanInfo, useMotionValue, useTransform} from "framer-motion";
 import {useState} from "react";
 import {CardItem} from "./CardItem/CardItem";
 import {images} from "./image-data";
 import "./carousel.css";
 
 export const Carousel = () => {
-
   const [activeIndex, setActive] = useState(2);
-  const [sec, setSec] = useState(0);
-  const [isDrag, setIsDrag] = useState(false);
-  const [isColaps, setIsColaps] = useState(true);
+  const [isCollapse, setIsCollapse] = useState(true);
 
-  const onDrag = async (event: any, info: any) => {
-
+  const onDrag = (event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
     if (Math.abs(info.offset.x) > 130) {
-      setTimeout(() => {
-        if (info.offset.x < 0) {
-          activeIndex > 0 && setActive(activeIndex - 1)
-          if (isColaps) {
-            setIsColaps(false);
-          }
-        } else {
-          activeIndex < images.length - 1 && setActive(activeIndex + 1)
-          if (isColaps) {
-            setIsColaps(false);
-          }
+      if (info.offset.x < 0) {
+        activeIndex > 0 && setActive(activeIndex - 2)
+        if (isCollapse) {
+          setIsCollapse(false);
         }
-      }, 1000)
+      } else {
+        activeIndex < images.length - 1 && setActive(activeIndex + 2)
+        if (isCollapse) {
+          setIsCollapse(false);
+        }
+      }
     }
   }
 
@@ -34,21 +28,17 @@ export const Carousel = () => {
 
   let backgroundColor = useTransform(x, [-100, 0, 100], ['#474747', '#ffffff', '#474747']);
 
-  const onDragEnd = () => {
-    setIsDrag(false);
-  }
-
   const cardWidth = 402;
   const halfWidthOfActiveCard = 221;
   const cardMargin = 40;
 
   const activeCarousel = (index: number) => {
     setActive(index);
-    setIsColaps(false);
+    setIsCollapse(false);
   }
 
   const closeCarousel = () => {
-    setIsColaps(true)
+    setIsCollapse(true)
   }
 
   const carouselVariants = {
@@ -78,7 +68,7 @@ export const Carousel = () => {
                 item={item}
                 isSelected={activeIndex === index}
                 handleClick={() => activeCarousel(index)}
-                isColaps={isColaps}
+                isCollapse={isCollapse}
                 closeCarousel={closeCarousel}
               />
             ))}
@@ -93,11 +83,10 @@ export const Carousel = () => {
           x, backgroundColor,
         }}
         drag="x"
-        onDrag={onDrag}
-        onDragEnd={onDragEnd}
+        onDragEnd={onDrag}
         dragMomentum={false}
         dragConstraints={{left: 0, right: 0}}
-        dragElastic={0.7}
+        dragElastic={0.5}
       >
         <div className="dot">
           <div className="arrow_right">

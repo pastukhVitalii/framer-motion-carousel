@@ -9,18 +9,18 @@ type PropsType = {
   item: ProductType
   isSelected: boolean
   handleClick: () => void
-  isColaps: boolean
+  isCollapse: boolean
   closeCarousel: () => void
 }
 
 export const CardItem = (props: PropsType) => {
-  const {item, isSelected, handleClick, isColaps, closeCarousel} = props;
+  const {item, isSelected, handleClick, isCollapse, closeCarousel} = props;
 
   const cardVariants = {
     animate: {
-      height: isColaps ? '500px' : isSelected ? "600px" : '500px',
-      scaleX: isColaps ? 1 : isSelected ? 1.1 : 1,
-      y: isColaps ? 0 : isSelected ? -50 : 0,
+      height: isCollapse ? '500px' : isSelected ? "600px" : '500px',
+      scaleX: isCollapse ? 1 : isSelected ? 1.1 : 1,
+      y: isCollapse ? 0 : isSelected ? -50 : 0,
       transition: {
         easy: 'linear',
         duration: 1,
@@ -45,7 +45,7 @@ export const CardItem = (props: PropsType) => {
 
   const imgVariants = {
     animate: {
-      scale: isColaps ? 1 : isSelected ? 1.1 : 1,
+      scale: isCollapse ? 1 : isSelected ? 1.1 : 1,
       transition: {
         easy: 'linear',
         duration: 1.5,
@@ -65,7 +65,7 @@ export const CardItem = (props: PropsType) => {
         animate="animate"
       >
 
-        {!isColaps && <AnimatePresence>
+        {!isCollapse && <AnimatePresence>
           {isSelected &&
           <div>
             <motion.button
@@ -84,7 +84,7 @@ export const CardItem = (props: PropsType) => {
         </AnimatePresence>}
 
         <div className="static_content">
-          {item.isTop && <Top isSelected={isSelected} isColaps={isColaps}/>}
+          {item.isTop && <Top isSelected={isSelected} isCollapse={isCollapse}/>}
           <motion.img
             className="card_img"
             onClick={onClick}
