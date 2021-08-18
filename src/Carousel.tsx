@@ -51,23 +51,26 @@ export const Carousel = () => {
     setIsColaps(true)
   }
 
+  const carouselVariants = {
+    animate: {
+      x: -activeIndex * cardWidth - halfWidthOfActiveCard - activeIndex * cardMargin * 2 - cardMargin / 2,
+      transition: {
+        easy: 'linear',
+        duration: 1,
+        delay: 0.5,
+      }
+    },
+  }
+
   return (
     <>
-      <div>
-        <div style={{position: 'absolute', left: '0', top: '0', width: '50%'}}/>
-        <div style={{position: 'absolute', right: '0', top: '25%', width: '50%'}}>
+      <>
+        <div className="left_container"/>
+        <div className="right_container">
           <motion.div
-            style={{
-              display: "flex",
-              width: "fit-content",
-              justifyContent: "space-between",
-            }}
-            animate={{x: -activeIndex * cardWidth - halfWidthOfActiveCard - activeIndex * cardMargin * 2 - cardMargin / 2,}}
-            transition={{
-              easy: 'linear',
-              duration: 1,
-              delay: 0.5,
-            }}
+            className="carousel"
+            variants={carouselVariants}
+            animate="animate"
           >
             {images.map((item, index) => (
               <CardItem
@@ -81,11 +84,11 @@ export const Carousel = () => {
             ))}
           </motion.div>
         </div>
-      </div>
+      </>
       <div>
       </div>
       <motion.div
-        className="carousel"
+        className="switcher"
         style={{
           x, backgroundColor,
         }}

@@ -1,4 +1,24 @@
+.left_container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.right_container {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  width: 50%;
+}
+
 .carousel {
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+}
+
+.switcher {
   width: 60px;
   height: 60px;
   z-index: 20;
@@ -29,9 +49,9 @@
   bottom: 50px;
   left: calc(50% - 200px);
   z-index: 2;
-  -webkit-box-shadow: 10px 1px  #222,  -10px 0 1px #222;
-  -moz-box-shadow: 10px 0 1px #222,  -10px 0 1px #222;
-  box-shadow: 10px 0 1px #222,  -10px 0 1px #222;
+  -webkit-box-shadow: 10px 1px #222, -10px 0 1px #222;
+  -moz-box-shadow: 10px 0 1px #222, -10px 0 1px #222;
+  box-shadow: 10px 0 1px #222, -10px 0 1px #222;
 }
 
 .arrow_left,
@@ -41,6 +61,7 @@
   left: -20px;
   top: -13px;
 }
+
 .arrow_left {
   transform: rotate(-90deg);
   left: 20px;
