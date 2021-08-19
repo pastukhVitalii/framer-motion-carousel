@@ -1,20 +1,32 @@
 {
   "files": {
-    "main.css": "/pastukhVitalii/framer-motion-carousel/static/css/main.2f48062c.chunk.css",
-    "main.js": "/pastukhVitalii/framer-motion-carousel/static/js/main.c38c0847.chunk.js",
-    "main.js.map": "/pastukhVitalii/framer-motion-carousel/static/js/main.c38c0847.chunk.js.map",
+    "main.css": "/pastukhVitalii/framer-motion-carousel/static/css/main.01d98805.chunk.css",
+    "main.js": "/pastukhVitalii/framer-motion-carousel/static/js/main.6f650210.chunk.js",
+    "main.js.map": "/pastukhVitalii/framer-motion-carousel/static/js/main.6f650210.chunk.js.map",
     "runtime-main.js": "/pastukhVitalii/framer-motion-carousel/static/js/runtime-main.01b2d5f5.js",
     "runtime-main.js.map": "/pastukhVitalii/framer-motion-carousel/static/js/runtime-main.01b2d5f5.js.map",
     "static/js/2.048d3108.chunk.js": "/pastukhVitalii/framer-motion-carousel/static/js/2.048d3108.chunk.js",
     "static/js/2.048d3108.chunk.js.map": "/pastukhVitalii/framer-motion-carousel/static/js/2.048d3108.chunk.js.map",
     "index.html": "/pastukhVitalii/framer-motion-carousel/index.html",
-    "static/css/main.2f48062c.chunk.css.map": "/pastukhVitalii/framer-motion-carousel/static/css/main.2f48062c.chunk.css.map",
-    "static/js/2.048d3108.chunk.js.LICENSE.txt": "/pastukhVitalii/framer-motion-carousel/static/js/2.048d3108.chunk.js.LICENSE.txt"
+    "static/css/main.01d98805.chunk.css.map": "/pastukhVitalii/framer-motion-carousel/static/css/main.01d98805.chunk.css.map",
+    "static/js/2.048d3108.chunk.js.LICENSE.txt": "/pastukhVitalii/framer-motion-carousel/static/js/2.048d3108.chunk.js.LICENSE.txt",
+    "static/media/14-09-2020_ao9944-161_2_1-removebg-previewpng.7eabb963.png": "/pastukhVitalii/framer-motion-carousel/static/media/14-09-2020_ao9944-161_2_1-removebg-previewpng.7eabb963.png",
+    "static/media/23550440c4ccab05e4fc1ebd85e742cc_gw3jj4zmvycccn8x.4a7e908b.jpg": "/pastukhVitalii/framer-motion-carousel/static/media/23550440c4ccab05e4fc1ebd85e742cc_gw3jj4zmvycccn8x.4a7e908b.jpg",
+    "static/media/343bfbfc1a10a39a528a3d34367669c2_x0njjjmjekgekk4i.161c75dc.jpg": "/pastukhVitalii/framer-motion-carousel/static/media/343bfbfc1a10a39a528a3d34367669c2_x0njjjmjekgekk4i.161c75dc.jpg",
+    "static/media/44694ee386818f3276566210464cf341_4xf70asma4hp5tu2.48217b62.jpg": "/pastukhVitalii/framer-motion-carousel/static/media/44694ee386818f3276566210464cf341_4xf70asma4hp5tu2.48217b62.jpg",
+    "static/media/4603294711888-image-0_1.e9f44f6c.png": "/pastukhVitalii/framer-motion-carousel/static/media/4603294711888-image-0_1.e9f44f6c.png",
+    "static/media/4825587187792-image-0_2.03ee3b80.png": "/pastukhVitalii/framer-motion-carousel/static/media/4825587187792-image-0_2.03ee3b80.png",
+    "static/media/4e151d7b538e5aba66295f3a5d67b1f4_56utfrdccs2rteni.6fbec74b.jpg": "/pastukhVitalii/framer-motion-carousel/static/media/4e151d7b538e5aba66295f3a5d67b1f4_56utfrdccs2rteni.6fbec74b.jpg",
+    "static/media/cd759395d74526f72c3b0c43c91b4220_ewu87esqyksyq9b9.cace1520.jpg": "/pastukhVitalii/framer-motion-carousel/static/media/cd759395d74526f72c3b0c43c91b4220_ewu87esqyksyq9b9.cace1520.jpg",
+    "static/media/fae150570c8ce6ddc4f787bf77b02c95_ynqo7ja9y3payoqf.eecace61.jpg": "/pastukhVitalii/framer-motion-carousel/static/media/fae150570c8ce6ddc4f787bf77b02c95_ynqo7ja9y3payoqf.eecace61.jpg",
+    "static/media/image_b4c8cb03-dd3d-41d9-bda4-2205.3b10420e.png": "/pastukhVitalii/framer-motion-carousel/static/media/image_b4c8cb03-dd3d-41d9-bda4-2205.3b10420e.png",
+    "static/media/shoe_transparent_5613png.b1b675fd.png": "/pastukhVitalii/framer-motion-carousel/static/media/shoe_transparent_5613png.b1b675fd.png",
+    "static/media/transparent_102131.38584212.png": "/pastukhVitalii/framer-motion-carousel/static/media/transparent_102131.38584212.png"
   },
   "entrypoints": [
     "static/js/runtime-main.01b2d5f5.js",
     "static/js/2.048d3108.chunk.js",
-    "static/css/main.2f48062c.chunk.css",
-    "static/js/main.c38c0847.chunk.js"
+    "static/css/main.01d98805.chunk.css",
+    "static/js/main.6f650210.chunk.js"
   ]
 }
