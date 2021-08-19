@@ -1,6 +1,6 @@
 import {motion, PanInfo, useMotionValue, useTransform} from "framer-motion";
 import {useEffect, useState} from "react";
-import {CardItem} from "./CardItem/CardItem";
+import {CardItem} from "./components/CardItem/CardItem";
 import {images} from "./image-data";
 import "./carousel.css";
 import {useWindowWidth} from "@react-hook/window-size";

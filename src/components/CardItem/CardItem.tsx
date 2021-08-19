@@ -3,7 +3,7 @@ import "./cardItem.css";
 import {Octagon} from "../Octagon/Octagon";
 import {CardContent} from "../CardContent/CardContent";
 import {Top} from "../Top/Top";
-import {ProductType} from "../image-data";
+import {ProductType} from "../../image-data";
 
 type PropsType = {
   item: ProductType
@@ -53,7 +53,7 @@ export const CardItem = (props: PropsType) => {
     }
   }
 
-  const onClick = (e: any) => {
+  const onClick = () => {
     handleClick();
   }
 
