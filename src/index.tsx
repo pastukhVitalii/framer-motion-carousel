@@ -3,7 +3,9 @@ import {render} from "react-dom";
 import { Carousel } from "./Carousel";
 
 const App = () => (
-  <div>
+  <div style={{
+    width: '100%'
+  }}>
     <Carousel/>
   </div>
 );

@@ -27,3 +27,13 @@
   height: 350px;
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .card {
+    width: 300px;
+  }
+  .card_img {
+    width: 250px;
+    height: 300px;
+  }
+}
