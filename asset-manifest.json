@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/pastukhVitalii/framer-motion-carousel/static/css/main.2f48062c.chunk.css",
+    "main.js": "/pastukhVitalii/framer-motion-carousel/static/js/main.c38c0847.chunk.js",
+    "main.js.map": "/pastukhVitalii/framer-motion-carousel/static/js/main.c38c0847.chunk.js.map",
+    "runtime-main.js": "/pastukhVitalii/framer-motion-carousel/static/js/runtime-main.01b2d5f5.js",
+    "runtime-main.js.map": "/pastukhVitalii/framer-motion-carousel/static/js/runtime-main.01b2d5f5.js.map",
+    "static/js/2.048d3108.chunk.js": "/pastukhVitalii/framer-motion-carousel/static/js/2.048d3108.chunk.js",
+    "static/js/2.048d3108.chunk.js.map": "/pastukhVitalii/framer-motion-carousel/static/js/2.048d3108.chunk.js.map",
+    "index.html": "/pastukhVitalii/framer-motion-carousel/index.html",
+    "static/css/main.2f48062c.chunk.css.map": "/pastukhVitalii/framer-motion-carousel/static/css/main.2f48062c.chunk.css.map",
+    "static/js/2.048d3108.chunk.js.LICENSE.txt": "/pastukhVitalii/framer-motion-carousel/static/js/2.048d3108.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01b2d5f5.js",
+    "static/js/2.048d3108.chunk.js",
+    "static/css/main.2f48062c.chunk.css",
+    "static/js/main.c38c0847.chunk.js"
+  ]
+}
