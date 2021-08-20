@@ -2,7 +2,7 @@
   "name": "framer-motion-carousel",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/pastukhVitalii/framer-motion-carousel",
+  "homepage": "https://pastukhvitalii.github.io/framer-motion-carousel/",
   "dependencies": {
     "@react-hook/window-size": "^3.0.7",
     "@testing-library/jest-dom": "^5.11.4",

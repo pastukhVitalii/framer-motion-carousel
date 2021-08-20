@@ -4,12 +4,14 @@ import {CardItem} from "./components/CardItem/CardItem";
 import {images} from "./image-data";
 import "./carousel.css";
 import {useWindowWidth} from "@react-hook/window-size";
+import arrow from "./assets/icon/arrow.svg";
 
 export const Carousel = () => {
   const width = useWindowWidth();
   const isMobile = width <= 500;
   const [activeIndex, setActive] = useState(2);
   const [isCollapse, setIsCollapse] = useState(true);
+  const [isShowVideo, setIsShowVideo] = useState(false);
 
   useEffect(() => {
     if (isMobile) setIsCollapse(false)
@@ -41,10 +43,12 @@ export const Carousel = () => {
   const activeCarousel = (index: number) => {
     setActive(index);
     setIsCollapse(false);
+    setIsShowVideo(false);
   }
 
   const closeCarousel = () => {
-    setIsCollapse(true)
+    setIsCollapse(true);
+    setIsShowVideo(false);
   }
 
   const carouselVariants = {
@@ -77,6 +81,8 @@ export const Carousel = () => {
                 handleClick={() => activeCarousel(index)}
                 isCollapse={isCollapse}
                 closeCarousel={closeCarousel}
+                isShowVideo={isShowVideo}
+                setIsShowVideo={setIsShowVideo}
               />
             ))}
           </motion.div>
@@ -95,28 +101,20 @@ export const Carousel = () => {
       >
         <div className="dot">
           <div className="arrow_right">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
-              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
-            </svg>
+            <img src={arrow} alt="arrow"/>
           </div>
           <div className="arrow_left">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
-              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
-            </svg>
+            <img src={arrow} alt="arrow"/>
           </div>
         </div>
       </motion.div>
       <div className="line"/>
 
       <div className="next" onClick={() => activeIndex < images.length - 1 && setActive(activeIndex + 1) }>
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
-          <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
-        </svg>
+        <img src={arrow} alt="arrow"/>
       </div>
       <div className="prev" onClick={() => activeIndex > 0 && setActive(activeIndex - 1)}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
-          <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
-        </svg>
+        <img src={arrow} alt="arrow"/>
       </div>
     </>
   )
