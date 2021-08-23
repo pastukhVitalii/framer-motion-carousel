@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/framer-motion-carousel/static/css/main.64191991.chunk.css",
-    "main.js": "/framer-motion-carousel/static/js/main.70d2b06b.chunk.js",
-    "main.js.map": "/framer-motion-carousel/static/js/main.70d2b06b.chunk.js.map",
+    "main.css": "/framer-motion-carousel/static/css/main.60fb33e9.chunk.css",
+    "main.js": "/framer-motion-carousel/static/js/main.aab5650a.chunk.js",
+    "main.js.map": "/framer-motion-carousel/static/js/main.aab5650a.chunk.js.map",
     "runtime-main.js": "/framer-motion-carousel/static/js/runtime-main.8866d533.js",
     "runtime-main.js.map": "/framer-motion-carousel/static/js/runtime-main.8866d533.js.map",
-    "static/js/2.304d3926.chunk.js": "/framer-motion-carousel/static/js/2.304d3926.chunk.js",
-    "static/js/2.304d3926.chunk.js.map": "/framer-motion-carousel/static/js/2.304d3926.chunk.js.map",
+    "static/js/2.68b5a053.chunk.js": "/framer-motion-carousel/static/js/2.68b5a053.chunk.js",
+    "static/js/2.68b5a053.chunk.js.map": "/framer-motion-carousel/static/js/2.68b5a053.chunk.js.map",
     "index.html": "/framer-motion-carousel/index.html",
-    "static/css/main.64191991.chunk.css.map": "/framer-motion-carousel/static/css/main.64191991.chunk.css.map",
-    "static/js/2.304d3926.chunk.js.LICENSE.txt": "/framer-motion-carousel/static/js/2.304d3926.chunk.js.LICENSE.txt",
+    "static/css/main.60fb33e9.chunk.css.map": "/framer-motion-carousel/static/css/main.60fb33e9.chunk.css.map",
+    "static/js/2.68b5a053.chunk.js.LICENSE.txt": "/framer-motion-carousel/static/js/2.68b5a053.chunk.js.LICENSE.txt",
     "static/media/14-09-2020_ao9944-161_2_1-removebg-previewpng.7eabb963.png": "/framer-motion-carousel/static/media/14-09-2020_ao9944-161_2_1-removebg-previewpng.7eabb963.png",
     "static/media/23550440c4ccab05e4fc1ebd85e742cc_gw3jj4zmvycccn8x.4a7e908b.jpg": "/framer-motion-carousel/static/media/23550440c4ccab05e4fc1ebd85e742cc_gw3jj4zmvycccn8x.4a7e908b.jpg",
     "static/media/343bfbfc1a10a39a528a3d34367669c2_x0njjjmjekgekk4i.161c75dc.jpg": "/framer-motion-carousel/static/media/343bfbfc1a10a39a528a3d34367669c2_x0njjjmjekgekk4i.161c75dc.jpg",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8866d533.js",
-    "static/js/2.304d3926.chunk.js",
-    "static/css/main.64191991.chunk.css",
-    "static/js/main.70d2b06b.chunk.js"
+    "static/js/2.68b5a053.chunk.js",
+    "static/css/main.60fb33e9.chunk.css",
+    "static/js/main.aab5650a.chunk.js"
   ]
 }
