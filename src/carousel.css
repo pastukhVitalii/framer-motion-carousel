@@ -85,8 +85,8 @@
 .next {
   right: 10px;
   transform: rotate(-90deg);
-}
 
+}
 .prev {
   left: 10px;
   transform: rotate(90deg);

@@ -1,11 +1,15 @@
 import "./videoPlayer.css";
 import {motion} from "framer-motion";
+import {useWindowWidth} from "@react-hook/window-size";
 
 type PropsType = {
   videoUrl?: string
 }
 
 export const VideoPlayer = (props: PropsType) => {
+  const width = useWindowWidth();
+  const isMobile = width <= 500;
+
   const playerVariants = {
     hidden: {
       scale: 0,
@@ -30,7 +34,7 @@ export const VideoPlayer = (props: PropsType) => {
     <>
       <motion.video
         className="card_video"
-        width="402" height="605" controls autoPlay muted
+        width={isMobile? '300px' : "400px"} height="600" controls autoPlay muted
         variants={playerVariants}
         initial="hidden"
         animate="visible"

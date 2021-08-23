@@ -110,7 +110,7 @@ export const Carousel = () => {
       </motion.div>
       <div className="line"/>
 
-      <div className="next" onClick={() => activeIndex < images.length - 1 && setActive(activeIndex + 1) }>
+      <div className="next" onClick={() => activeIndex < images.length - 1 && setActive(activeIndex + 1)}>
         <img src={arrow} alt="arrow"/>
       </div>
       <div className="prev" onClick={() => activeIndex > 0 && setActive(activeIndex - 1)}>

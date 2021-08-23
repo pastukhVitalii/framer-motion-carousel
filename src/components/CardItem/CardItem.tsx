@@ -117,7 +117,6 @@ export const CardItem = (props: PropsType) => {
             src={item.imageUrl}
           />
         </div>
-
       </motion.div>
     </>
   )
