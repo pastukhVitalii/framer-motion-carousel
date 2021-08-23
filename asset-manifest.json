@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/framer-motion-carousel/static/css/main.6d1114d1.chunk.css",
-    "main.js": "/framer-motion-carousel/static/js/main.6fbdb927.chunk.js",
-    "main.js.map": "/framer-motion-carousel/static/js/main.6fbdb927.chunk.js.map",
+    "main.css": "/framer-motion-carousel/static/css/main.64191991.chunk.css",
+    "main.js": "/framer-motion-carousel/static/js/main.eabdf97f.chunk.js",
+    "main.js.map": "/framer-motion-carousel/static/js/main.eabdf97f.chunk.js.map",
     "runtime-main.js": "/framer-motion-carousel/static/js/runtime-main.8866d533.js",
     "runtime-main.js.map": "/framer-motion-carousel/static/js/runtime-main.8866d533.js.map",
-    "static/js/2.6454d53a.chunk.js": "/framer-motion-carousel/static/js/2.6454d53a.chunk.js",
-    "static/js/2.6454d53a.chunk.js.map": "/framer-motion-carousel/static/js/2.6454d53a.chunk.js.map",
+    "static/js/2.304d3926.chunk.js": "/framer-motion-carousel/static/js/2.304d3926.chunk.js",
+    "static/js/2.304d3926.chunk.js.map": "/framer-motion-carousel/static/js/2.304d3926.chunk.js.map",
     "index.html": "/framer-motion-carousel/index.html",
-    "static/css/main.6d1114d1.chunk.css.map": "/framer-motion-carousel/static/css/main.6d1114d1.chunk.css.map",
-    "static/js/2.6454d53a.chunk.js.LICENSE.txt": "/framer-motion-carousel/static/js/2.6454d53a.chunk.js.LICENSE.txt",
+    "static/css/main.64191991.chunk.css.map": "/framer-motion-carousel/static/css/main.64191991.chunk.css.map",
+    "static/js/2.304d3926.chunk.js.LICENSE.txt": "/framer-motion-carousel/static/js/2.304d3926.chunk.js.LICENSE.txt",
     "static/media/14-09-2020_ao9944-161_2_1-removebg-previewpng.7eabb963.png": "/framer-motion-carousel/static/media/14-09-2020_ao9944-161_2_1-removebg-previewpng.7eabb963.png",
     "static/media/23550440c4ccab05e4fc1ebd85e742cc_gw3jj4zmvycccn8x.4a7e908b.jpg": "/framer-motion-carousel/static/media/23550440c4ccab05e4fc1ebd85e742cc_gw3jj4zmvycccn8x.4a7e908b.jpg",
     "static/media/343bfbfc1a10a39a528a3d34367669c2_x0njjjmjekgekk4i.161c75dc.jpg": "/framer-motion-carousel/static/media/343bfbfc1a10a39a528a3d34367669c2_x0njjjmjekgekk4i.161c75dc.jpg",
@@ -20,7 +20,6 @@
     "static/media/arrow.ce4f434f.svg": "/framer-motion-carousel/static/media/arrow.ce4f434f.svg",
     "static/media/cd759395d74526f72c3b0c43c91b4220_ewu87esqyksyq9b9.cace1520.jpg": "/framer-motion-carousel/static/media/cd759395d74526f72c3b0c43c91b4220_ewu87esqyksyq9b9.cace1520.jpg",
     "static/media/fae150570c8ce6ddc4f787bf77b02c95_ynqo7ja9y3payoqf.eecace61.jpg": "/framer-motion-carousel/static/media/fae150570c8ce6ddc4f787bf77b02c95_ynqo7ja9y3payoqf.eecace61.jpg",
-    "static/media/full-screen-svgrepo-com.4f5aeda9.svg": "/framer-motion-carousel/static/media/full-screen-svgrepo-com.4f5aeda9.svg",
     "static/media/image_b4c8cb03-dd3d-41d9-bda4-2205.3b10420e.png": "/framer-motion-carousel/static/media/image_b4c8cb03-dd3d-41d9-bda4-2205.3b10420e.png",
     "static/media/play-button.5c5ed2fa.svg": "/framer-motion-carousel/static/media/play-button.5c5ed2fa.svg",
     "static/media/shoe_transparent_5613png.b1b675fd.png": "/framer-motion-carousel/static/media/shoe_transparent_5613png.b1b675fd.png",
@@ -28,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8866d533.js",
-    "static/js/2.6454d53a.chunk.js",
-    "static/css/main.6d1114d1.chunk.css",
-    "static/js/main.6fbdb927.chunk.js"
+    "static/js/2.304d3926.chunk.js",
+    "static/css/main.64191991.chunk.css",
+    "static/js/main.eabdf97f.chunk.js"
   ]
 }
